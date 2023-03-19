@@ -18,11 +18,13 @@ const Navbar = () => {
                     src="https://www.freepnglogos.com/uploads/netflix-logo-0.png" 
                     alt="netflix logo" 
                     />
-                    <span>Homepage</span>
-                    <span>Series</span>
-                    <span>Movies</span>
-                    <span>New and Popular</span>
-                    <span>My List</span>
+                    <div className="navlinks">
+                        <span>Homepage</span>
+                        <span>Series</span>
+                        <span>Movies</span>
+                        <span>New and Popular</span>
+                        <span>My List</span>
+                    </div>
                 </div>
                 <div className="right">
                     <Search className="icon" />
@@ -35,6 +37,12 @@ const Navbar = () => {
                             <span>Settings</span>
                             <span>Logout</span>
                         </div>
+                    </div>
+
+                    <div className='handburger'>
+                        <span className='bar'></span>
+                        <span className='bar'></span>
+                        <span className='bar'></span>
                     </div>
                 </div>
             </div>

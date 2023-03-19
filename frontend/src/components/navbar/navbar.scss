@@ -16,6 +16,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
 
         .left {
             display: flex;
@@ -26,10 +27,33 @@
                 margin-right: 2.4em;
             }
 
-            span {
+            @media screen and (max-width: 614px) {
+                img {
+                    height: 1.5em;
+                }
+            }
+
+            .navlinks span {
                 margin-right: 1.2em;
                 font-weight: 600;
                 cursor: pointer;
+            }
+
+            @media screen and (max-width: 614px) {
+                .navlinks {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    right: 5px;
+                    top: 50px;
+                    background-color: var(--main-color);
+                    padding: 0.4em 0.8em;
+                    border-radius: 5px;
+                }
+
+                .navlinks span {
+                    margin: 0.5em 0;
+                }
             }
         }
 
@@ -46,6 +70,12 @@
             .icon {
                 margin: 0 1em;
                 cursor: pointer;
+            }
+
+            @media screen and (max-width: 614px) {
+                .icon {
+                    margin: 0 0.2em;
+                }
             }
 
             .profile {
@@ -65,9 +95,28 @@
                         display: flex;
                         flex-direction: column;
                         position: absolute;
+                        top: 50px;
+                        right: 30px;
                     }
                 }
             }
+
+           @media screen and (max-width: 614px) {
+            .handburger .bar {
+                background-color: var(--main-color);
+                width: 1.2em;
+                height: 0.2em;
+                display: block;
+                margin-bottom: 0.2rem;
+                border-radius: 0.2rem;
+            }
+           }
+        }
+    }
+
+    @media screen and (max-width: 614px) {
+        .container {
+            padding: 0.8em 0.2em;
         }
     }
 }
