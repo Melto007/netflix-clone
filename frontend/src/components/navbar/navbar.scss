@@ -7,8 +7,8 @@
     background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
 
     &.scrolled {
-        background: linear-gradient(to top, transparent 0%, rgb(255, 255, 255) 0%);;
-        color: var(--main-color);
+        background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0) 0%);;
+        transition: all 250ms ease-in-out;
     }
 
     .container {
